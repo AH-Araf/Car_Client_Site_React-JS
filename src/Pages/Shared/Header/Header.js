@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import logo from '../../../assets/logo.svg';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
+
 const Header = () => {
     const {user} = useContext(AuthContext);
     const menuItems = <>
@@ -40,6 +41,9 @@ const Header = () => {
             </div>
             <div className="navbar-end">
                 <button className="btn btn-outline btn-warning">Appointment</button>
+            </div>
+            <div>
+            
             </div>
         </div>
     );
